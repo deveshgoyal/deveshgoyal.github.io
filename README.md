@@ -24,23 +24,25 @@ Express.js flash notifications that can work with any template engine
   app.use(flash());
 ```
 
-Use `res.flash()` in your middleware
+Use `res.flash( msg [, type ] [, option ])` in your middleware
 
 ``` javascript
   app.get('/', function (req, res) {
-    req.flash('info', 'Welcome');
+    res.flash('Welcome', 'info');
     res.render('index', {
       title: 'Home'
     })
   });
   app.get('/addFlash', function (req, res) {
-    req.flash('info', 'Flash Message Added');
+    res.flash()
+    res.flash('Flash Message Added');
     res.redirect('/');
   });
 ```
 
-Access the messages in your views by just importing the following script before the end of body tag :
+Access the messages in your views by just importing the following script before the end of body tag.
 
+In case of html/hbs
 ``` html
   ...
   <script type="text/javascript" src="flash/flash-client.js"></script>
