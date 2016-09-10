@@ -49,6 +49,34 @@ In case of html/hbs
   </body>
   ...
 ```
+## Type
+
+Type can be of four kinds 
+
+
+`success`
+
+``` html
+<div style="opacity: 1;float:left;padding: .3em .4em;margin:0 auto .5em;display:inline-block;clear:both;position:relative;min-width:120px; /* 610/13 */ *max-width:45.750em; /* 610/13.3333 - for IE */color:green;background-color: rgba(9, 129, 0, 0.42);border-radius: 5px;border: 1px green solid;">success</div>
+```
+
+`info`
+
+``` html
+<div style="opacity: 1;float:left;padding: .3em .4em;margin:0 auto .5em;display:inline-block;clear:both;position:relative;min-width:120px; /* 610/13 */ *max-width:45.750em; /* 610/13.3333 - for IE */color:blue;background-color: rgba(26, 22, 242, 0.42);border-radius: 5px;border: 1px blue solid;">info</div>
+```
+
+`error`
+
+``` html
+<div style="opacity: 1;float:left;padding: .3em .4em;margin:0 auto .5em;display:inline-block;clear:both;position:relative;min-width:120px; /* 610/13 */ *max-width:45.750em; /* 610/13.3333 - for IE */color:red;background-color: rgba(255, 0, 0, 0.42);border-radius: 5px;border: 1px red solid;">error</div>
+```
+
+`warn`
+
+``` html
+<div style="opacity: 1;float:left;padding: .3em .4em;margin:0 auto .5em;display:inline-block;clear:both;position:relative;min-width:120px; /* 610/13 */ *max-width:45.750em; /* 610/13.3333 - for IE */color:coral;background-color: rgba(255, 250, 80, 0.87);border-radius: 5px;border: 1px coral solid;">warn</div>
+```
 
 ## License 
 
