@@ -3,20 +3,20 @@ Express.js flash notifications that can work with any template engine
 
 <code>
 var flash = require('flash-express');
-</code>
+</code><br>
 <code>
 app.use(flash());
 </code>
 
 <code>
 	res.flash("success");
-</code>
+</code><br>
 <code>
 	res.flash("info", "info"); \n
-</code>
+</code><br>
 <code>
 	res.flash("error", "error", option); \n
-</code>
+</code><br>
 <code>
 	res.flash("warn", "warn", option); \n
 </code>
