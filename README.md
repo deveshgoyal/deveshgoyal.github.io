@@ -69,7 +69,7 @@ Type can be of four kinds
  
 <div style="opacity: 1;float:left;padding: .3em .4em;margin:0 auto .5em;display:inline-block;clear:both;position:relative;min-width:120px; /* 610/13 */ *max-width:45.750em; /* 610/13.3333 - for IE */color:red;background-color: rgba(255, 0, 0, 0.42);border-radius: 5px;border: 1px red solid;">error</div>
 
-![alt tag](https://doc-08-9o-docs.googleusercontent.com/docs/securesc/g80t1p4sutgg12efaj0hioqc0cs868fg/h4s0nfsnnhcj4bubavvanbf3fvac9g1j/1473588000000/08088824704958381812/08088824704958381812/0B4fau-D6sg2rQ2hMemY2a1h3UmM)
+![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2reHlrU3Q2SG1LYmc)
 
 `warn`
 
