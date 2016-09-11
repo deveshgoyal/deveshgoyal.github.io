@@ -7,7 +7,8 @@ Flash Messages for your Express Application with simple and beautifull pop-up fl
 
   Works with Express 3.x.x
 
-    npm install npm install git://github.com/deveshgoyal/flash-express.git
+    npm install flash-express  
+    npm install git://github.com/deveshgoyal/flash-express.git
 
 ## Usage
 
