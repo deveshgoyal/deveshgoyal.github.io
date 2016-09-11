@@ -1,10 +1,7 @@
-# deveshgoyal.github.io
 
-Express.js flash notifications that can work with any template engine
-
-# Flash Express
-
-  Flash Messages for your Express Application
+## Flash Express
+Express.js flash notifications that can work with any template engine.  
+Flash Messages for your Express Application with simple and beautifull pop-up flash.
 
 ## Installation
 
@@ -127,7 +124,7 @@ Posible values can be :-
 
 tr - top-right (default)  
 r  - right  
-bl - bottom-right  
+br - bottom-right  
 b  - bottom  
 bl - bottom-left  
 l  - left  
