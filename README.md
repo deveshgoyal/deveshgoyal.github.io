@@ -24,10 +24,10 @@ Express.js flash notifications that can work with any template engine
   app.use(flash());
 ```
 
-Use `res.flash( msg [, type ] [, option ])` in your middleware. `res.flash()` accepts three parameters
-1.) text to be showen in the flash
-2.) type of the flash('success','error','info','warn')
-3.) options to be used such as time duration, postion etc.
+Use `res.flash( msg [, type ] [, option ])` in your middleware. `res.flash()` accepts three parameters  
+1.) text to be showen in the flash  
+2.) type of the flash('success','error','info','warn')  
+3.) options to be used such as time duration, postion etc.  
 
  `res.flash('welcome')` will generate a sucess flash.
 
@@ -40,9 +40,9 @@ Use `res.flash( msg [, type ] [, option ])` in your middleware. `res.flash()` ac
   });
 ```
 
-Access the messages in your views by just importing the following script before the end of body tag.
+Access the messages in your views by just importing the following script before the end of body tag.  
 
-In case of html/hbs
+In case of html/hbs  
 ``` html
   ...
   <script type="text/javascript" src="flash/flash-client.js"></script>
@@ -55,11 +55,6 @@ In case of html/hbs
  
  ![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2rU0xMWXVnNmxmbWs)
  
- https://drive.google.com/file/d//view?usp=sharing
-
-
-
-
 
 ##Parameters
 
@@ -125,19 +120,19 @@ default type is success. The following code will generate success flash
 ![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2rNEhiVEdENWV4azQ)
 
 #option
-option define the behaviour of the flash.
+option define the behaviour of the flash.  
 
-`Postion` will define the position of the flash. You can define 8 different position. 
-Posible values can be :- 
+`Postion` will define the position of the flash. You can define 8 different position.  
+Posible values can be :-  
 
-tr - top-right (default)
-r  - right
-bl - bottom-right
-b  - bottom
-bl - bottom-left
-l  - left
-tl - top-left
-t  - top
+tr - top-right (default)  
+r  - right  
+bl - bottom-right  
+b  - bottom  
+bl - bottom-left  
+l  - left  
+tl - top-left  
+t  - top  
 
 `duration` will define the duration is milliseconds for which the flash. Default value is 2000 ie 2s. 
 
