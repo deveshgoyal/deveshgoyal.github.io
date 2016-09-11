@@ -24,19 +24,19 @@ Express.js flash notifications that can work with any template engine
   app.use(flash());
 ```
 
-Use `res.flash( msg [, type ] [, option ])` in your middleware
+Use `res.flash( msg [, type ] [, option ])` in your middleware. `res.flash()` accepts three parameters
+1.) text to be showen in the flash
+2.) type of the flash('success','error','info','warn')
+3.) options to be used such as time duration, postion etc.
+
+ `res.flash('welcome')` will generate a sucess flash.
 
 ``` javascript
   app.get('/', function (req, res) {
-    res.flash('Welcome', 'info');
+    res.flash('Welcome');
     res.render('index', {
       title: 'Home'
     })
-  });
-  app.get('/addFlash', function (req, res) {
-    res.flash()
-    res.flash('Flash Message Added');
-    res.redirect('/');
   });
 ```
 
@@ -49,27 +49,108 @@ In case of html/hbs
   </body>
   ...
 ```
-## Type
+
+#And you are done. 
+ A beautifull flash will pop on the screen.
+ 
+ ![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2rU0xMWXVnNmxmbWs)
+ 
+ https://drive.google.com/file/d//view?usp=sharing
+
+
+
+
+
+##Parameters
+
+#Text/message
+it can be ant text is `string` format
+
+#Type
 
 Type can be of four kinds 
 
-
 `success`
 
-![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2rY2xhZ2piNmU4djA)
+default type is success. The following code will generate success flash
+
+``` javascript
+  app.get('/addFlash', function (req, res) {
+    res.flash('Flash Message Added');
+    res.redirect('/');
+  });
+  //or you can use this.
+  app.get('/addFlash', function (req, res) {
+    res.flash('Flash Message Added','success');
+    res.redirect('/');
+  });
+```
+
+![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2rMUhsbF9Ba1NqN3M)
+
+
 
 `info`
 
-![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2rYkNVT1ExUkZwek0)
+``` javascript
+    ...
+    res.flash('You are using Flash Express.','info');
+    ...
+```
+
+![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2rWUE2bTMzSmcxWVE)
+
+
 
 `error`
 
-![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2reHlrU3Q2SG1LYmc)
+``` javascript
+    ...
+    res.flash('Invalid Username','error');
+    ...
+```
+
+![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2rS01NeU9rMFhwWnM)
+
+
 
 `warn`
 
-![alt tag](https://drive.google.com/uc?id=B4fau-D6sg2rY3FZUzRZUGdENGs)
+``` javascript
+    ...
+    res.flash('Developers don\'t care about warning!','warn');
+    ...
+```
 
+![alt tag](https://drive.google.com/uc?id=0B4fau-D6sg2rNEhiVEdENWV4azQ)
+
+#option
+option define the behaviour of the flash.
+
+`Postion` will define the position of the flash. You can define 8 different position. 
+Posible values can be :- 
+
+tr - top-right (default)
+r  - right
+bl - bottom-right
+b  - bottom
+bl - bottom-left
+l  - left
+tl - top-left
+t  - top
+
+`duration` will define the duration is milliseconds for which the flash. Default value is 2000 ie 2s. 
+
+```javascript
+    app.get('/', function (req, res) {
+      var option = {
+        postion:"t",
+        duration:"1500"
+      };
+      res.flash('Flash Message Added',option);
+      res.redirect('/');
+    });
+```
 
 ## License 
 
